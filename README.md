@@ -24,6 +24,8 @@ $ git branch dev origin/dev
 $ git checkout dev
 ```
 
+papapapapapap
+
 * Para criar uma nova branch a partir da dev
 ```console
 $ git branch nome-recurso

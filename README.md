@@ -5,6 +5,7 @@ Requisitos minimos para executar o projeto:
 -------------------------------------------
 * python 3.6 ou superior
 * uma instancia do postgres devidamente configurado
+* um arquivo contendo atributos usados pelo projeto, disponivel em um repo privado
 
 Dicas para colaboradores:
 -------------------------

@@ -1,6 +1,11 @@
 marketplace
 ===========
 
+Requisitos minimos para executar o projeto:
+-------------------------------------------
+* python 3.6 ou superior
+* uma instancia do postgres devidamente configurado
+
 Dicas para colaboradores:
 -------------------------
 Setup para desenvolvimento no linux
@@ -13,7 +18,7 @@ $ git clone https://github.com/kiss-sh/marketplace.git
 ```console
 $ git clone git@github.com:kiss-sh/marketplace.git
 ```
-* Navegando pelas pastas do projeto, setando uma vent e instalando os requerimentos
+* Navegando pelas pastas do projeto, setando uma venv e instalando os requerimentos
 ```console
 $ cd marketplace/src/
 $ python3 -m venv .venv

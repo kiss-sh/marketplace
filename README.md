@@ -57,6 +57,7 @@ após concluir o recurso, crie uma merge request usando o github, para mesclar a
 
 Criar uma instancia do postgres usando docker:
 ----------------------------------------------
+> os comandos a seguir tambem podem ser usados no podman, trocando o comando docker por podman
 * Baixar a imagem do postgres
 ```console
 $ docker pull postgres

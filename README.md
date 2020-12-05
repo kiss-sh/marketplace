@@ -73,7 +73,7 @@ $ docker run --name postgres-django -p 5432:5432 -e "POSTGRES_PASSWORD=senha" -d
 ```console
 $ docker exec -it postgres-django bash
 # psql -U postgres
-# CREATE DATABASE market_db
+# CREATE DATABASE market_db;
 ```
 
 encerrar a cli e sair do container

@@ -129,3 +129,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+MEDIA_URL = '/images/' # URL das imgs
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images') # Pasta onde serão salvas imgs upadas

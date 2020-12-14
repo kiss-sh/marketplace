@@ -20,6 +20,8 @@ class Product(models.Model): # Produtos (filmes)
     genre = models.ManyToManyField(Genre)
     price = models.FloatField()
     image = models.ImageField(null = True, blank = True)
+
+    #TODO
     #description
     #stock
 
@@ -42,6 +44,12 @@ class Order(models.Model): # Pedidos
 
     def __str__(self):
         return str(self.id) # Id (inteiro), convertido para string
+
+    @property
+    def shipping(self):
+        shipping = True
+        #ordered_items = self.ordered_items.set.all()
+        return shipping
 
     @property
     def get_cart_total(self): # Valor total de produtos no carrinho

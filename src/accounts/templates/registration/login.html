@@ -2,10 +2,10 @@
 {% load static %}
 
 {% block content %}
-<form class="box-element" action="/accounts/login" method="post">
+<form class="box-element" action="" method="post">
     {% csrf_token %}
-    <input type="text" name="" id="" placeholder="Nome..."><br>
-    <input type="email" name="" id="" placeholder="Email..."><br>
+    <input type="text" name="nome" id="" placeholder="Nome..."><br>
+    <input type="email" name="email" id="" placeholder="Email..."><br>
     
     <button class="btn" type="submit">Entrar</button>
     

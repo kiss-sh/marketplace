@@ -31,6 +31,36 @@
 	}
 	const csrftoken = getToken('csrftoken');
 
+	function getCookie(name) {
+		// Divide o cookie (string) e obtem todos os nomes/valores individuais em uma matriz
+		var cookieArr = document.cookie.split(";");
+
+		// Loop para percorrer o array
+		for(var i = 0; i < cookieArr.length; i++) {
+			var cookiePair = cookieArr[i].split("=");
+
+			/* Remove espaço em branco no inicio do nome do cookie e compara
+			   com a string fornecida */
+			if(name == cookiePair[0].trim()) {
+				// Retornando o cookie decodificado
+				return decodeURIComponent(cookiePair[1]);
+			}
+		}
+
+		// Se não for encontrado, retorna nulo
+		return null;
+	}
+
+	var cart = JSON.parse(getCookie('cart'))
+
+	// Verificar se o carrinho está indefinido, se sim, será criado
+	if (cart == undefined){
+		cart = {} // Objeto carrinho
+		console.log('Cart Created!', cart)
+		document.cookie ='cart=' + JSON.stringify(cart) + ";domain=;path=/"
+	}
+	console.log('Cart:', cart)
+
 	</script>
 
 </head>

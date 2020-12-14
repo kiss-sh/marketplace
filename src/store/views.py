@@ -9,6 +9,8 @@ from .utils import cookie_cart, cart_data
 def store(request):
     data = cart_data(request)
     cartItems = data['cartItems']
+    order = data['order']
+    items = data['items']
 
     products = Product.objects.all() # Obtendo todos os produtos
     context = {'products':products, 'cartItems':cartItems} # Enviando um dic para o template como contexto

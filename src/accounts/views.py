@@ -12,4 +12,4 @@ def login(request):
         user = authenticate(request, username=name, password=email)
         if user is not None:
             auth_login(request, user)
-            return redirect('auth/')
+        return redirect('auth/')

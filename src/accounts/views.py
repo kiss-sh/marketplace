@@ -1,14 +1,15 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login as auth_login
 
 def login(request):
     if request.method == 'GET':
         return render(request, 'registration/login.html')
+
     elif request.method == 'POST':
-        print(request.POST)
-        return redirect('auth/')
-    
-def autentication(request):
-    print(request.POST)
-    #user = authenticate(username=request.POST['nome'], password=request.POST['email'])
-    return render(request, 'store/store.html')
+        name = request.POST['nome']
+        email = request.POST['email']
+
+        user = authenticate(request, username=name, password=email)
+        if user is not None:
+            auth_login(request, user)
+            return redirect('auth/')

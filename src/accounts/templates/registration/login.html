@@ -2,22 +2,15 @@
 {% load static %}
 
 {% block content %}
-<form class="box-element" action="" method="post">
+<form class="box-element" action="/accounts/login" method="post">
     {% csrf_token %}
-    <table>
-        <tr>
-            <td>Nome de usuário:</td>
-            <td>{{ form.username }}</td>
-        </tr>
-        <tr>
-            <td>Senha:</td>
-            <td>{{ form.password }}</td>
-        </tr>
-    </table>
+    <input type="text" name="" id="" placeholder="Nome..."><br>
+    <input type="email" name="" id="" placeholder="Email..."><br>
+    
     <button class="btn" type="submit">Entrar</button>
     
-    <p><a href="{% url 'password_reset' %}">Esqueceu a senha?</a></p>
-    <p>Ainda não tem uma conta? <a href="{% url 'password_reset' %}">Cadastre-se</a></p>
+    <p><a href=""> Esqueceu a senha?</a></p>
+    <p>Ainda não tem uma conta? <a href="" >Cadastre-se</a></p>
 </form>
 
 

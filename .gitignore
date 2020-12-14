@@ -4,6 +4,9 @@ key_settings.py
 # Media folder
 media/
 
+# ide/editor files
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

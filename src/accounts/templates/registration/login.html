@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<form action="" method="post">
+<form class="box-element" action="" method="post">
     {% csrf_token %}
     <table>
         <tr>
@@ -14,8 +14,11 @@
             <td>{{ form.password }}</td>
         </tr>
     </table>
-    <button type="submit">Entrar</button>
+    <button class="btn" type="submit">Entrar</button>
+    
+    <p><a href="{% url 'password_reset' %}">Esqueceu a senha?</a></p>
+    <p>Ainda não tem uma conta? <a href="{% url 'password_reset' %}">Cadastre-se</a></p>
 </form>
 
-<p><a href="{% url 'password_reset' %}">Esqueceu a senha?</a></p>
+
 {% endblock content %}

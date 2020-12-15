@@ -1,6 +1,23 @@
 marketplace
 ===========
 
+Ideias iniciais:
+- Mostrar produtos cadastrados na página inicial 
+- Cada produto teria uma página individual com suas informações
+- Carrinho de compras: Adicionar itens, remover, mostrar o itens no carrinho, mostrar quantidade de itens, mostrar valor total e prosseguir para o checkout
+- Checkout
+- Permitir que um usuário não cadastrado compre na loja
+- Utilizar API PayPal
+- Página de Login
+
+Estado atual:
+- Produtos cadastrados estão sendo exibidos na página inicial
+- Carrinho de compras está totalmente funcional
+- Checkout feito
+- Utilizando API do PayPal
+- Usuário precisa estar cadastrado para comprar na loja
+- Página de login não está usando senha
+
 Requisitos minimos para executar o projeto:
 -------------------------------------------
 * python 3.6 ou superior

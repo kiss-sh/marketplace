@@ -74,7 +74,7 @@
      </div>
 </div>
 
-<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=BRL"></script>
 
   <script>
   // Render the PayPal button into #paypal-button-container
@@ -89,7 +89,7 @@
             return actions.order.create({
                 purchase_units: [{
                     amount: {
-                        value: '88.44'
+                        value: parseFloat(total).toFixed(2)
                     }
                 }]
             });
@@ -128,11 +128,6 @@
      })
      //fim da tentativa
 
-     /*
-     document.getElementById('make-payment').addEventListener('click', function(e){
-          submitFormData()
-     })
-     */
      function submitFormData(){
           console.log('Payment button clicked')
 

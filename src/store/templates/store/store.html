@@ -1,0 +1,24 @@
+<!--template geral da locadora-->
+
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+     <div class="row">
+          {% for product in products %}
+          <div class="col-lg-4">
+               <!-- Imgs dos produtos -->
+               <img class="thumbnail" src="{{ product.image_url }}">
+               <div class="box-element product">
+                    <h6><strong>{{ product.name }}</strong></h6>
+                    <hr>
+                    <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Adicionar ao carrinho</button>
+                    <a class="btn btn-outline-success" href="#">Ver</a>
+                    <h4 style="display: inline-block; float: right"><strong>
+                         <!-- Formatando o preço dos produtos, duas casas decimais -->
+                         R${{ product.price|floatformat:2 }}
+                    </strong></h4>
+               </div>
+          </div>
+          {% endfor %}
+     </div>
+{% endblock content %}

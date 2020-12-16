@@ -1,0 +1,14 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<form class="box-element" action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="nome" id="" placeholder="Nome..."><br>
+    <input type="email" name="email" id="" placeholder="Email..."><br>
+    
+    <button class="btn" type="submit">Entrar</button>
+</form>
+
+
+{% endblock content %}

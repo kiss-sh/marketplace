@@ -10,7 +10,7 @@ membros:
 * [Gabriel Jales](https://github.com/gabrieljales)
 * [jefferson Ximenes](https://github.com/jeffersonximeness)
 * [Jonas Rodrigues](https://github.com/jonis69)
-* [Marcos Fonseca](https://github.com/Marcos-Fonseca)
+* [Marcos Fonseca](https://github.com/marcosfnsc)
 
 Ideias iniciais:
 ----------------

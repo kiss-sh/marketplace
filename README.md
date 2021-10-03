@@ -80,7 +80,7 @@ $ git pull
 
 * Empurrar nova branch para o repo remoto pela primeira vez
 ```console
-$ git push --set-upstream origin nome-recurso
+$ git push -u origin nome-recurso
 ```
 
 após concluir o recurso, crie uma merge request usando o github, para mesclar a branch com a branch dev
